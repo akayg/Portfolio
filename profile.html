@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Computer Science Engineer</title>
+    <title>Abhishek Gore | Computer Science Engineer</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="#"><span>&lt;</span>YourName<span>/&gt;</span></a>
+                <a href="#"><span>&lt;</span>AbhishekGore<span>/&gt;</span></a>
             </div>
             <nav class="nav-links">
                 <ul>
@@ -35,7 +35,7 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Hi, I'm <span>Your Name</span></h1>
+                <h1>Hi, I'm <span>Abhishek Gore</span></h1>
                 <h2>Computer Science Engineer</h2>
                 <p>I build innovative solutions through code and technology.</p>
                 <div class="hero-btns">
@@ -44,39 +44,63 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/profile.jpg" alt="Your Name">
+                <img src="image/img.svg" alt="Abhishek Gore">
             </div>
         </div>
     </section>
-
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About <span>Me</span></h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="images/profile.jpg" alt="About Me">
+                    <img src="/image/profile.jpg" alt="About Me">
                 </div>
                 <div class="about-text">
                     <h3>Computer Science Engineer & Developer</h3>
-                    <p>I am a passionate computer science engineer with expertise in software development, algorithms, and system design. I hold a Bachelor's degree in Computer Science from [Your University] and have [X] years of professional experience.</p>
-                    <p>My technical skills include proficiency in multiple programming languages, frameworks, and tools. I enjoy solving complex problems and creating efficient, scalable solutions.</p>
+                    <p>I am a passionate computer science engineer with expertise in software development, algorithms, and system design. I hold a Bachelor's degree in Computer Science from Punjab Technical University and have professional experience in building innovative solutions.</p>
+                    <p>With a strong foundation in programming and problem-solving, I thrive on creating efficient, scalable, and user-friendly applications. My goal is to leverage technology to make a meaningful impact.</p>
                     <div class="about-info">
                         <div class="info-item">
-                            <p><span>Name:</span> Your Name</p>
-                            <p><span>Degree:</span> B.Tech in Computer Science</p>
-                            <p><span>Experience:</span> X years</p>
+                            <p><strong>Name:</strong> <span id="name-info">Abhishek Gore</span></p>
+                            <p><strong>Degree:</strong> <span id="degree-info">B.Tech in Computer Science</span></p>
+                            <p><strong>Experience:</strong> <span id="experience-info">X years</span></p>
                         </div>
                         <div class="info-item">
-                            <p><span>Email:</span> your.email@example.com</p>
-                            <p><span>Phone:</span> +1 234 567 890</p>
-                            <p><span>Location:</span> Your City, Country</p>
+                            <p><strong>Email:</strong> <span id="email-info">email@example.com</span></p>
+                            <p><strong>Phone:</strong> <span id="phone-info">+1 234 567 890</span></p>
+                            <p><strong>Location:</strong> <span id="location-info">Your City, Country</span></p>
                         </div>
                     </div>
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn">Contact Me</a>
+                        <a href="assets/resume.pdf" download class="btn secondary">Download CV</a>
+                    </div>
+                </div>
+            </div>
+            <div class="about-interactive">
+                <h3>Want to know more?</h3>
+                <button class="btn" id="toggle-more-info">Show More</button>
+                <div id="more-info" style="display: none;">
+                    <p>I have worked on numerous projects involving web development, machine learning, and mobile app development. I am always eager to learn new technologies and take on challenging problems.</p>
+                    <p>In my free time, I enjoy contributing to open-source projects, exploring new programming languages, and mentoring aspiring developers.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        document.getElementById('toggle-more-info').addEventListener('click', function () {
+            const moreInfo = document.getElementById('more-info');
+            if (moreInfo.style.display === 'none') {
+                moreInfo.style.display = 'block';
+                this.textContent = 'Show Less';
+            } else {
+                moreInfo.style.display = 'none';
+                this.textContent = 'Show More';
+            }
+        });
+    </script>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
@@ -336,15 +360,15 @@
                     <h3>Get in Touch</h3>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
-                        <p>your.email@example.com</p>
+                        <p>email@abhishekgore.com</p>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
-                        <p>+1 234 567 890</p>
+                        <p>+919914109066</p>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>Your City, Country</p>
+                        <p>Chandigarh, India</p>
                     </div>
                     <div class="social-links">
                         <a href="#" target="_blank"><i class="fab fa-github"></i></a>
@@ -379,7 +403,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="#"><span>&lt;</span>YourName<span>/&gt;</span></a>
+                    <a href="#"><span>&lt;</span>AbhishekGore<span>/&gt;</span></a>
                 </div>
                 <div class="footer-links">
                     <ul>
@@ -392,7 +416,7 @@
                     </ul>
                 </div>
                 <div class="footer-copyright">
-                    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+                    <p>&copy; <span id="year"></span> Abhishek Gore. All rights reserved.</p>
                 </div>
             </div>
         </div>

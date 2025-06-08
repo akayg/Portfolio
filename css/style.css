@@ -3,10 +3,10 @@
     --primary-color: #3498db;
     --secondary-color: #2c3e50;
     --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
-    --text-color: #333;
-    --text-light: #7f8c8d;
+    --light-color: #08333d;
+    --dark-color: #19375a;
+    --text-color: #fff;
+    --text-light: #c1d0d1;
     --white: #fff;
     --black: #000;
     --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--white);
+    background-color: var(--black);
     overflow-x: hidden;
 }
 
@@ -114,13 +114,13 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: var(--white);
+    background-color: var(--black);
     box-shadow: var(--box-shadow);
     transition: var(--transition);
 }
 
 header.scrolled {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(0, 0, 0, 0.95);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -300,7 +300,7 @@ header .container {
 .skill-category h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: var(--dark-color);
+    color: var(--text-light);
 }
 
 .skill-items {
@@ -349,7 +349,7 @@ header .container {
 }
 
 .project-card {
-    background-color: var(--white);
+    background-color: var(--dark-color);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--box-shadow);
@@ -403,7 +403,7 @@ header .container {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.8rem;
-    color: var(--dark-color);
+    color: var(--text-light);
 }
 
 .project-links {
@@ -489,7 +489,7 @@ header .container {
 .timeline-content h4 {
     font-size: 1rem;
     margin-bottom: 15px;
-    color: var(--text-light);
+    color: var(--primary-color);
 }
 
 .timeline-content ul {
@@ -499,7 +499,7 @@ header .container {
 .timeline-content ul li {
     list-style-type: disc;
     margin-bottom: 8px;
-    color: var(--text-light);
+    color: var(--dark-color);
 }
 
 /* Contact Section */
@@ -621,7 +621,7 @@ footer {
 }
 
 .footer-links ul li a {
-    color: var(--light-color);
+    color: var(--text-color);
 }
 
 .footer-links ul li a:hover {
@@ -629,7 +629,7 @@ footer {
 }
 
 .footer-copyright p {
-    color: var(--light-color);
+    color: var(--text-color);
     font-size: 0.9rem;
 }
 
