@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links Tree</title>
+    <title>Abhishek Gore - Links Tree</title>
+    <meta name="description" content="Explore the portfolio and projects of Abhishek Gore, a Manual to Automation QA, Python-Driven Tester, and aspiring SDE.">
+    <meta name="keywords" content="Abhishek Gore, QA Automation, Python Tester, Software Development Engineer, Portfolio, Abhishek Gore Projects, Abhishek Gore Links">
+    <meta name="author" content="Abhishek Gore">
     <style>
         /* Embedded CSS - Dark mode as default */
         :root {
@@ -155,9 +157,48 @@
         <div class="profile">
             <img src="image/profile.jpg" alt="Profile Picture" class="profile-img" id="profileImg">
             <h1 id="userName">Abhishek Gore</h1>
-            <p class="bio" id="userBio">Manual to Automation QA • Python-Driven Tester • SDE in Progress</p>
+            <p class="bio" id="dynamicGreeting" style="font-size: 18px; color: var(--accent-color); margin-bottom: 20px;">I AM A <span id="dynamicWord"></span></p>
+
+            <script>
+                // JavaScript to dynamically type out the words
+                const words = ["Manual to Automation QA", "Human!", "Python-Driven Tester", "SDE in Progress", "Developer"];
+                let index = 0;
+                let charIndex = 0;
+                const typingSpeed = 100; // Speed of typing each character
+                const erasingSpeed = 50; // Speed of erasing each character
+                const delayBetweenWords = 1000; // Delay before typing the next word
+                const dynamicWordElement = document.getElementById('dynamicWord');
+
+                function typeWord() {
+                    if (charIndex < words[index].length) {
+                        dynamicWordElement.textContent += words[index].charAt(charIndex);
+                        charIndex++;
+                        setTimeout(typeWord, typingSpeed);
+                    } else {
+                        setTimeout(eraseWord, delayBetweenWords);
+                    }
+                }
+
+                function eraseWord() {
+                    if (charIndex > 0) {
+                        dynamicWordElement.textContent = words[index].substring(0, charIndex - 1);
+                        charIndex--;
+                        setTimeout(eraseWord, erasingSpeed);
+                    } else {
+                        index = (index + 1) % words.length;
+                        setTimeout(typeWord, typingSpeed);
+                    }
+                }
+
+                // Start the typing animation
+                document.addEventListener('DOMContentLoaded', () => {
+                    typeWord();
+                });
+            </script>
+            <!-- <p class="bio" id=""> •  • </p> -->
         </div>
-        
+
+
         <div class="links">
             <a href="https://github.com/akayg/qa-manual-portfolio" class="link" target="_blank">🧠 My Projects (QA + Python + Automation)</a>
             <a href="profile.html" class="link" target="_blank">🌐 Full Portfolio Website</a>
