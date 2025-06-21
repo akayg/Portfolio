@@ -200,14 +200,50 @@
 
 
         <div class="links">
-            <a href="https://github.com/akayg/qa-manual-portfolio" class="link" target="_blank">🧠 My Projects (QA + Python + Automation)</a>
-            <a href="profile.html" class="link" target="_blank">🌐 Full Portfolio Website</a>
-            <a href="https://github.com/akayg" class="link" target="_blank">💻 GitHub Projects & Code</a>
-            <a href="404.html" class="link" target="_blank">📄 Download My Resume</a>
-            <a href="loading.html" class="link" target="_blank">🧑‍🚀 My 3AM Builds</a>
-            <a href="mailto:email@abhishekgore.com" class="link" target="_blank">📬 Contact / Hire Me</a>
+            <a href="https://github.com/akayg/qa-manual-portfolio" class="link neon-button" target="_blank">🧠 My Projects (QA + Python + Automation)</a>
+            <a href="profile.html" class="link neon-button" target="_blank">🌐 Full Portfolio Website</a>
+            <a href="https://github.com/akayg" class="link neon-button" target="_blank">💻 GitHub Projects & Code</a>
+            <a href="404.html" class="link neon-button" target="_blank">📄 Download My Resume</a>
+            <a href="loading.html" class="link neon-button" target="_blank">🧑‍🚀 My 3AM Builds</a>
+            <a href="mailto:email@abhishekgore.com" class="link neon-button" target="_blank">📬 Contact / Hire Me</a>
         </div>
-    
+
+        <style>
+            .neon-button {
+            position: relative;
+            overflow: hidden;
+            }
+
+            .neon-button::before,
+            .neon-button::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 2px solid var(--accent-color);
+            box-sizing: border-box;
+            animation: neon-border 2s linear infinite;
+            }
+
+            .neon-button::after {
+            filter: blur(5px);
+            }
+
+            @keyframes neon-border {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+            }
+        </style>
+ 
         <!-- <div class="social-icons">
             <a href="https://x.com/abhishe71483226" class="social-icon"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/abhishekgore-security/" class="social-icon"><i class="fab fa-linkedin"></i></a>
